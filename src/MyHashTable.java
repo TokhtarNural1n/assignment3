@@ -107,8 +107,7 @@ public class MyHashTable<K, V> {
             size++;
         }
 
-    }
-
+    
     public V get(K key){
         int index = hash(key);
         HashNode<K,V> current = chainArray[index];
