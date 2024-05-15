@@ -8,7 +8,6 @@ public class MyHashTable<K, V> {
             this.value = value; // assigning value
         }
 
-
         @Override
         public String toString(){
             return "{" + key + " " + value + "}";
