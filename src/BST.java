@@ -11,7 +11,6 @@ public class BinarySearchTree<K extends Comparable<K>, V> {
             this.value = value;
         }
     }
-
     public void insert(K key, V value) {
         root = insertNode(root, key, value);
     }
