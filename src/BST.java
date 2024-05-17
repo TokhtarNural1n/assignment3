@@ -15,7 +15,6 @@ public class BinarySearchTree<K extends Comparable<K>, V> {
     public void insert(K key, V value) {
         root = insertNode(root, key, value);
     }
-
     private Node insertNode(Node node, K key, V value) {
         if (node == null) {
             size++;
