@@ -1,7 +1,6 @@
 public class BinarySearchTree<K extends Comparable<K>, V> {
     private Node root;
     private int size;
-
     private class Node {
         private K key;
         private V value;
