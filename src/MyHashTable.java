@@ -8,13 +8,11 @@ public class MyHashTable<K, V> {
             this.value = value; // assigning value
         }
 
-
         @Override
         public String toString(){
             return "{" + key + " " + value + "}";
         }
     }
-
 
     private HashNode<K, V>[] chainArray;
     private int M = 11;
@@ -109,8 +107,7 @@ public class MyHashTable<K, V> {
             size++;
         }
 
-    }
-
+    
     public V get(K key){
         int index = hash(key);
         HashNode<K,V> current = chainArray[index];
@@ -141,7 +138,6 @@ public class MyHashTable<K, V> {
         }
         return null;
     }
-
 
     public boolean contains(V value){
         for(int i = 0; i < chainArray.length; i++){
