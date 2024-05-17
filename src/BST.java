@@ -114,7 +114,6 @@ public class BinarySearchTree<K extends Comparable<K>, V> {
         inOrderNodeTraversal(root, nodesList);
         return nodesList;
     }
-
     private void inOrderNodeTraversal(Node node, List<Node> nodesList) {
         if (node != null) {
             inOrderNodeTraversal(node.left, nodesList);
